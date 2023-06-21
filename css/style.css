@@ -302,7 +302,7 @@ header{
 }
 
 .faq__icon{
-    align-items: flex-start;
+    align-self: flex-start;
     font-size: 1.2rem;
 }
 
