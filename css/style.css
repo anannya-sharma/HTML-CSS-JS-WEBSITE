@@ -358,3 +358,11 @@ header{
     top: -1.5rem;
     transform: rotate(45deg);
 }
+
+/* =============== FOOTER =============== */
+
+footer{
+    background: var(--color-bg1);
+    padding-top: 5rem;
+    font-size: 0.2rem;
+}
