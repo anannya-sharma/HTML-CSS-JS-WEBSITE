@@ -227,15 +227,17 @@
 
             <!-- ===== END OF THE FAQs ====== -->
 
-          <section class="container testimonials__Container">
+          <section class="container testimonials__container mySwiper">
             <h2>Student's Testimonial</h2>
-            <div>
-                <article class="testimonial">
+            <div class="swiper-wrapper">
+                <article class="testimonial swiper-slide">
                     <div class="avatar">
                         <img src="images/avatar1.jpg" alt="">
                     </div>
-                        <h5>Diana Ayi</h5>
+                        <div class="testimonial__info">
+                            <h5>Diana Ayi</h5>
                         <small>Student</small>
+                        </div>
                         <div class="testimonial__body">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat velit voluptatibus. Nostrum cumque, incidunt velit accusamus saepe pariatur dolore exercitationem necessitatibus nobis vitae asperiores voluptatum sequi sunt nisi totam!
@@ -243,12 +245,15 @@
                         </div>
                 </article>
 
-                <article class="testimonial">
+                <article class="testimonial swiper-slide">
                     <div class="avatar">
                         <img src="images/avatar2.jpg" alt="">
                     </div>
+                    <div class="testimonial__info">
                         <h5>Errest Achiever</h5>
                         <small>Web Developer</small>
+                    </div>
+                        
                         <div class="testimonial__body">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat velit voluptatibus. Nostrum cumque, incidunt velit accusamus saepe pariatur dolore exercitationem necessitatibus nobis vitae asperiores voluptatum sequi sunt nisi totam!
@@ -256,12 +261,14 @@
                         </div>
                 </article>
 
-                <article class="testimonial">
+                <article class="testimonial swiper-slide">
                     <div class="avatar">
                         <img src="images/avatar3.jpg" alt="">
                     </div>
+                    <div class="testimonial__info">
                         <h5>Edem Quist</h5>
-                        <small>Student</small>
+                        <small>Student</small> 
+                    </div>
                         <div class="testimonial__body">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat velit voluptatibus. Nostrum cumque, incidunt velit accusamus saepe pariatur dolore exercitationem necessitatibus nobis vitae asperiores voluptatum sequi sunt nisi totam!
@@ -269,12 +276,14 @@
                         </div>
                 </article>
 
-                <article class="testimonial">
+                <article class="testimonial swiper-slide">
                     <div class="avatar">
                         <img src="images/avatar4.jpg" alt="">
                     </div>
+                    <div class="testimonial__info">
                         <h5>Hajia Bintu</h5>
-                        <small>Student</small>
+                        <small>Student</small> 
+                    </div>
                         <div class="testimonial__body">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat velit voluptatibus. Nostrum cumque, incidunt velit accusamus saepe pariatur dolore exercitationem necessitatibus nobis vitae asperiores voluptatum sequi sunt nisi totam!
@@ -282,12 +291,14 @@
                         </div>
                 </article>
 
-                <article class="testimonial">
+                <article class="testimonial swiper-slide">
                     <div class="avatar">
                         <img src="images/avatar5.jpg" alt="">
                     </div>
-                        <h5>Selena Doe</h5>
-                        <small>Developer</small>
+                    <div class="testimonial__info">
+                        <h5>Selena Gomez</h5>
+                        <small>Developer</small> 
+                    </div>
                         <div class="testimonial__body">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat velit voluptatibus. Nostrum cumque, incidunt velit accusamus saepe pariatur dolore exercitationem necessitatibus nobis vitae asperiores voluptatum sequi sunt nisi totam!
@@ -300,5 +311,17 @@
 
     <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    </script>
+
 </body>
 </html>
