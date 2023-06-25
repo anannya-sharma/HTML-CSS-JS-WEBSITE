@@ -82,3 +82,10 @@
 .team__member:hover img{
     filter: saturate(1);
 }
+
+.team__member-info *{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team__member-info
