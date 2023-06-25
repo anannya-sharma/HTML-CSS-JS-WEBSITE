@@ -118,10 +118,10 @@
 
 @media screen and(max-width:1024px){
     .about__achievements{
-        margin-top: 2rem;
+     margin-top: 2rem;
     }
 
-    .abhout__achievement-container{
+    .about__achievements-container{
         grid-template-columns: 1fr;
         gap: 4rem;
     }
