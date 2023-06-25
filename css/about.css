@@ -69,6 +69,7 @@
     border: 1px solid transparent;
     transition: var(--transition);
     position: relative;
+    overflow: hidden;
 }
 
 .team__member:hover{
@@ -97,7 +98,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
+    right: -100%;
     display: flex;
     flex-direction: column;
     background: var(--color-primary);
@@ -105,6 +106,11 @@
     box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
 }
 
+.team__member:hover .team__member-socials{
+    right: 0;
+}
+
 .team__member-socials a{
     padding: 1rem;
 }
+
